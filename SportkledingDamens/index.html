@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportkleding Winkel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welkom bij Sportkleding Winkel</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showHome()">Home</a></li>
+                <li><a href="#" onclick="showDamesKleding()">Dames Kleding</a></li>
+                <li><a href="#">Over ons</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home">
+            <h2>Welkom bij de Sportkleding Winkel</h2>
+            <p>Klik op 'Dames Kleding' om onze damesmode te bekijken.</p>
+        </section>
+
+        <section id="dames-kleding" class="hidden">
+            <h2>Dames Kleding</h2>
+            <div class="product">
+                <img src="jogginsbroekdamnes.webp" alt="jogginsbroek wit">
+                <h3>Jogginsbroek wit</h3>
+                <p>Prijs: €29.99</p>
+                <p>Maat: S, M, L, XL</p>
+                <button onclick="addToCart('Dames Sportshirt')">Voeg toe aan winkelwagen</button>
+            </div>
+            <div class="product">
+                <img src="jonngisbroekzwart.webp" alt="jogginsbroek zwart">
+                <h3>Jogginsbroek zwart</h3>
+                <p>Prijs: €34.99</p>
+                <p>Maat: S, M, L</p>
+                <button onclick="addToCart('Dames Sportbroek')">Voeg toe aan winkelwagen</button>
+            </div>
+            <div class="product">
+                <img src="zwarthoodie.jpg" alt="hoodie">
+                <h3>Dames hoodie zwart</h3>
+                <p>Prijs: €49.99</p>
+                <p>Maat: S, M, L</p>
+                <button onclick="addToCart('Dames Jack')">Voeg toe aan winkelwagen</button>
+            </div>
+            <div class="product">
+                <img src="beigehoodie.png" alt="hoodie">
+                <h3>Dames hoodie beige</h3>
+                <p>Prijs: €49.99</p>
+                <p>Maat: S, M, L</p>
+                <button onclick="addToCart('Dames Jack')">Voeg toe aan winkelwagen</button>
+            </div>
+            <div class="product">
+                <img src="hoodiewhite.jpg" alt="hoodie">
+                <h3>Dames hoodie wit</h3>
+                <p>Prijs: €49.99</p>
+                <p>Maat: S, M, L</p>
+                <button onclick="addToCart('Dames Jack')">Voeg toe aan winkelwagen</button>
+            </div>
+            <div class="product">
+                <img src="haarband.webp" alt="haarband">
+                <h3>Dames haarband</h3>
+                <p>Prijs: €21,45</p>
+                <p>Maat: S, M, L</p>
+                <button onclick="addToCart('Dames Jack')">Voeg toe aan winkelwagen</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sportkleding Winkel. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
