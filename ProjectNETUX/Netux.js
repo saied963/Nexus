@@ -14,3 +14,4 @@ document.getElementById("view-more").addEventListener("click", function() {
 document.getElementById("view-more-winter").addEventListener("click", function() {
     alert("Loading more winter collection items...");
 });
+
