@@ -9,7 +9,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 
 if ($conn->connect_error) {
-    die("Connectie mislukt: " . $conn->connect_error);
+    die("Connectie mislukt: " . $conn->connect_error); //Als het connectie niet werkt, gaat het een foutmelding weergeven
 }
 
 
@@ -68,25 +68,27 @@ if ($conn->connect_error) {
 
 
 <div class="producten-container">
+    </html>
+
 <?php
     $sql = "SELECT p.* FROM product p
-    JOIN categorie c ON p.ID_categorie = c.ID_categorie
-    WHERE c.categorie_naam = 'mannen'";
+    JOIN categorie c ON p.ID_categorie = c.ID_categorie 
+    WHERE c.categorie_naam = 'mannen'"; //SQL query wordt hier uitgevoerd om alle producten uit de database te halen waarin het categorie 'heren' is
 
     $result = $conn->query($sql);
 
     // Toon producten
 if ($result->num_rows > 0) {
-    echo "<div class='producten-lijst'>";
+    echo "<div class='producten-lijst'>"; //als er meer dan 1 rijen zijn, gaat het een html codes echoen en een while loop uitvoeren om elke product een voor een te weergeven in het website
     while($row = $result->fetch_assoc()) {
-        $productNaam = htmlspecialchars($row["naam_product"]);
+        $productNaam = htmlspecialchars($row["naam_product"]); 
         $productPrijs = htmlspecialchars($row["prijs_product"]);
         $productAfbeelding = htmlspecialchars($row["afbeelding_product"]);
 
         
         if (!empty($productAfbeelding)) {
             $isExternal = (strpos($productAfbeelding, 'http') === 0);
-            $imgSrc = $isExternal ? $productAfbeelding : "images/" . $productAfbeelding;
+            $imgSrc = $isExternal ? $productAfbeelding : "images/" . $productAfbeelding; //Deze codes bekijken of de afbeeldingen bestaan
         } else {
             $imgSrc = "images/placeholder.jpg"; 
         }
@@ -99,12 +101,12 @@ if ($result->num_rows > 0) {
     }
     echo "</div>";
 } else {
-    echo "Geen producten gevonden.";
+    echo "Geen producten gevonden."; //Foutmelding
 }
 
     $conn->close();
 ?>
-
+<html>
         <!--footer homepage-->
         <section class="footer-hustlefit-homepage">
         <img src="Hustlefit logo(1).jpg" alt="Hustlefit" id="hustlefitlogo"> <!--Logo in de footer-->
