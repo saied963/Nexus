@@ -1,0 +1,271 @@
+/* Algemene reset en basis */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar_sales {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E3EBFF;
+    padding: 10px 20px;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+#logo_sales img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    margin-left: 110px;
+    padding: 0;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #6893BA;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-left: 25px;
+}
+
+.navbar-menu li a:hover {
+    color: #000;
+}
+
+.logos img {
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+
+
+/* Header */
+.header-hustlefit-sales {
+    background-color: #6893BA;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#ctaa_sales {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.header-hustlefit-sales2 {
+    padding: 30px 0;
+    background-color: #E3EBFF;
+    text-align: center;
+}
+
+.h1_sales {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #6893BA;
+}
+
+/* Product Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card-wrapper {
+    position: relative;
+    border-color: #222222;
+}
+
+.sale-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #6893BA;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    z-index: 1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.new-price {
+    color: #6893BA;
+    font-weight: bold;
+}
+
+/* Kopen knop */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6893BA;
+}
+
+#view-more-winter-sales {
+    background-color: #6893BA;
+    border: none;
+    padding: 1rem 2.5rem;
+    color: #F5F5F5;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 685px;
+    transition: background-color 0.3s ease;
+    font-size: 0.8em;
+    font-family: 'lemonmilkregular', sans-serif;
+}
+
+#view-more-winter-sales:hover {
+    background-color: #adb9c5;
+    color: white;
+}
+
+/* Footer */
+.footer-hustlefit-sales {
+    background-color: #E3EBFF;
+    border-top: 2px solid #e3e3e3;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+    text-align: center; /* Centraal uitlijnen van tekst */
+}
+
+#hustlefitlogo_sales {
+    height: 60px;
+    margin-right: 75px;
+}
+
+.footeritems-hustlefit_sales ul,
+.sociaalmedia-footer ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    justify-content: center; 
+}
+
+.footeritems-hustlefit_sales li,
+.sociaalmedia-footer li {
+    color: #6893BA;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+.footeritems-hustlefit_sales li:hover,
+.sociaalmedia-footer li:hover {
+    color: #000;
+}
+
+/* Optioneel: Voeg wat ruimte toe voor de sociaal media iconen */
+.sociaalmedia-footer img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/* Social media iconen styling */
+.sociaalmedia-footer img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sociaalmedia-footer img:hover {
+    transform: scale(1.2); /* Vergroot icoon bij hover */
+}
+
+.social-media {
+    display: flex;
+    gap: 2rem;
+}
+
+.sociaalmedia-footer ul {
+    display: flex;
+    gap: 5vh;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media a {
+    color: #F5F5F5;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #222222;
+}
+
+
