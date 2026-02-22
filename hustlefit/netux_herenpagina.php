@@ -1,11 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root"; 
-$password = ""; 
-$dbname = "nexus";
-//database connectie
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+require_once 'db_connection.php';
 
 
 if ($conn->connect_error) {

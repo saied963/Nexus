@@ -59,8 +59,8 @@ Volg onderstaande stappen om het project lokaal te draaien.
 
 ### Stappen
 1. **Download of clone het project**  
-   Plaats de bestanden uit ProjectNextux-Final in Github in de map `htdocs` (XAMPP) of `www` (WAMP).  
-   Voorbeeldpad: `C:\xampp\htdocs\hustlefit`
+   Plaats de bestanden uit de map 'hustlefit' in de Nexus repo in Github in de map `htdocs` (XAMPP) of `www` (WAMP).  
+   Padnaam: `C:\xampp\htdocs\hustlefit`
 
 2. **Start de webserver en MySQL** via het controlepaneel van XAMPP/WAMP.
 
@@ -95,7 +95,7 @@ De tabel `product` bevat al enkele producten voor de herencategorie. De tabel `u
 
 ---
 
-## 📁 Bestandsstructuur
+## Bestandsstructuur
 
 ```
 hustlefit/
