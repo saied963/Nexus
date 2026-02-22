@@ -1,0 +1,274 @@
+/* fonts */
+@font-face {
+    font-family: 'lemonmilkregular';
+    src: url('../Week2/lemonmilk/LEMONMILK-Regular.otf') format('opentype'),
+    url('../Week2/lemonmilk/LEMONMILK-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'lemonmilkmedium';
+    src: url('../Week2/lemonmilk/LEMONMILK-Medium.otf') format('opentype'),
+    url('../Week2/lemonmilk/LEMONMILK-Medium.otf') format('otf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'lemonmilkbold';
+    src: url('../Week2/lemonmilk/LEMONMILK-Bold.otf') format('opentype'),
+    url('../Week2/lemonmilk/LEMONMILK-Bold.otf') format('otf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'lemonmilkmediumitalic';
+    src: url('../Week2/lemonmilk/LEMONMILK-MediumItalic.otf') format('opentype'),
+    url('../Week2/lemonmilk/LEMONMILK-MediumItalic.otf') format('otf');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'lemonmilkbolditalic';
+    src: url('../Week2/lemonmilk/LEMONMILK-BoldItalic.otf') format('opentype'),
+    url('../Week2/lemonmilk/LEMONMILK-BoldItalic.otf') format('otf');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar homepage */
+.navbar-hustlefit-homepage {
+    background-color: #E3EBFF;
+    list-style-type: none;
+    display: flex;
+    font-size: 1em;
+}
+
+#logo {
+    width: 10vw;
+    height: 10vh;
+}
+
+
+.navbar-hustlefit-menu {
+    font-family: 'lemonmilkregular', sans-serif;
+    display: flex;
+    gap: 5vh;
+    margin-left: 24vw;
+    margin-top: 4vh;
+    color: #6893BA;
+}
+
+.navbar-hustlefit-afbeeldingenmenu {
+    display: flex;
+    gap: 2vw;
+    margin-left: 20vw;
+    margin-top: 1vh;
+}
+
+/* header homepage */
+
+#cta_homepage {
+    background-color: #6893BA;
+    padding: 0.5em;
+}
+
+#cta {
+    color: #F5F5F5;
+    font-family: 'lemonmilkregular';
+    text-align: center;
+    font-size: 0.8em
+}
+
+#advertenties_homepage {
+    list-style-type: none;
+}
+
+#wintercollection_advertentie_homepage {
+    width: 100vw;
+    height: 65vh;
+}
+
+#button_left {
+    background-color: #E3EBFF;
+    border: none;
+    border-radius: 5rem;
+    position: relative;
+    bottom: 36vh;
+    left: 1vw;
+}
+
+#button_right {
+    background-color: #E3EBFF;
+    border: none;
+    border-radius: 5rem;
+    position: relative;
+    bottom: 43vh;
+    left: 95vw;
+}
+
+.header2-hustlefit-homepage {
+    list-style-type: none;
+}
+/* selectiescherm homepage */
+#sloganhustlefit {
+    font-family: 'lemonmilkbolditalic', sans-serif;
+    font-size: 5em;
+    text-align: center;
+    position: relative;
+    bottom: 5vh;
+    color: #222222;
+}
+
+.selectiescherm_hustlefit {
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.labels_selectiescherm_hustlefit {
+    font-family: 'lemonmilkregular', sans-serif;
+    color: #6893BA;
+    font-size: 1.3em;
+    display: flex;
+    bottom: 2em;
+    position: relative;
+    left: 5em;
+}
+
+#nieuw {
+    position: relative;
+    left: 30.8em;
+}
+
+#accessoires {
+    position: relative;
+    left: 21.2em;
+}
+
+#sportkleding {
+    position: relative;
+    left: 12.5em;
+}
+
+#sales {
+    position: relative;
+    right: 1em;
+}
+/* populaire items homepage */
+.populaireitems-hustlefit-homepage {
+    background-color: #E3EBFF;
+}
+
+#populaireitems {
+    font-family: 'lemonmilkmediumitalic', sans-serif;
+    font-size: 1.8em;
+    padding-top: 1.5em;
+    padding-left: 2.5em;
+    color: #222222;
+}
+
+.populaireitems-items-homepage {
+    list-style-type: none;
+    display: flex;
+    font-family: 'lemonmilkmedium', sans-serif;
+    gap: 3vw;
+    justify-content: center;
+    margin-top: 2vh;
+    color: #222222;
+    font-size: 1.25em;
+}
+
+#meerweergevenknop-homepage-pi {
+    border-radius: 0.2em;
+    padding: 0.4em;
+    font-family: 'lemonmilkmedium', sans-serif;
+    border: none;
+    background-color: #6893BA;
+    color: #F5F5F5;
+    font-size: 1em;
+    margin-left: 77.6em;
+    margin-top: 2em;
+}
+/* wintercollection homepage */
+.wintercollection-hustlefit-homepage {
+    background-color: #E3EBFF;
+}
+
+#wintercollectionlabel {
+    font-family: 'lemonmilkmediumitalic', sans-serif;
+    font-size: 1.8em;
+    padding-top: 1.5em;
+    padding-left: 2.5em;
+    color: #222222;
+}
+
+.wintercollection-items-hustlefit {
+    list-style-type: none;
+    display: flex;
+    font-family: 'lemonmilkmedium', sans-serif;
+    gap: 3vw;
+    justify-content: center;
+    margin-top: 2vh;
+    color: #222222;
+    font-size: 1.25em;
+}
+
+#meerweergevenknop-homepage-wc {
+    border-radius: 0.2em;
+    padding: 0.4em;
+    font-family: 'lemonmilkmedium', sans-serif;
+    border: none;
+    background-color: #6893BA;
+    color: #F5F5F5;
+    font-size: 1em;
+    margin-left: 77.6em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+/* footer homepage */
+
+.footer-hustlefit-homepage {
+    background-color: #6893BA;
+    list-style-type: none;
+    display: flex;
+    font-size: 1em;
+}
+
+#hustlefitlogo {
+    width: 10vw;
+    height: 10vh;
+}
+
+.footeritems-hustlefit {
+    font-family: 'lemonmilkregular', sans-serif;
+    display: flex
+;
+    gap: 5vh;
+    margin-top: 4vh;
+    color: #F5F5F5;
+    margin-left: 27vw;
+}
+
+.sociaalmedia-footer {
+    display: flex;
+    gap: 2vw;
+    margin-left: 28vw;
+    margin-top: 1vh;
+}

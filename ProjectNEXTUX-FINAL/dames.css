@@ -1,0 +1,308 @@
+/* Algemene styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6edfd;
+    color: #222;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5rem;
+    background-color: #E3EBFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#logo img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar-menu li {
+    list-style: none;
+}
+
+.navbar-menu a {
+    color: #6893BA;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    font-family: 'lemonmilkregular', sans-serif;
+}
+
+.navbar-menu a:hover {
+    color: #333333;
+}
+
+.logos {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.logos img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.logos img:hover {
+    transform: scale(1.2);
+}
+
+/* 10% korting banner */
+#cta_homepage {
+    background-color: #6f87c5;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#cta_homepage p {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('Fotos/anastase-maragos-HyvE5SiKMUs-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 15vh 5rem;
+    text-align: center;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
+}
+
+#hero .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#hero h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'lemonmilkbold', sans-serif;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+}
+
+#cta {
+    background-color: #6893BA;
+    border: none;
+    padding: 1.2rem 3rem;
+    font-size: 1.3em;
+    color: #F5F5F5;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+#cta:hover {
+    background-color: #E3EBFF;
+    color: #222222;
+}
+
+/* Dames Kleding Grid */
+#dames-kleding {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 3rem 2rem;
+    background-color: #f8f9fc;
+}
+
+#dames-kleding h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1.5rem;
+}
+
+/* Product Cards */
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 1.3em;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.product p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+/* Buttons */
+button {
+    background-color: #5a8db3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.3s ease all;
+}
+
+button:hover {
+    background-color: #3b6e92;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #5a8db3;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Dames Collection Sectie */
+#dames-collection {
+    background-color: #e6edfd;
+    padding: 5rem 2rem;
+    text-align: center;
+    color: #222;
+}
+
+#dames-collection h2 {
+    font-size: 2.2em;
+    font-family: 'lemonmilkbold', sans-serif;
+    margin-bottom: 1rem;
+}
+
+#dames-collection p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 1rem;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+.dames-button {
+    background-color: #5a8db3;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s ease all;
+}
+
+.dames-button:hover {
+    background-color: #3b6e92;
+    transform: scale(1.05);
+}
+
+/* Footer Hustlefit Homepage */
+.footer-hustlefit-homepage {
+    background-color: #5a8db3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#hustlefitlogo {
+    width: 150px;
+    height: auto;
+}
+
+.footeritems-hustlefit ul,
+.sociaalmedia-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.footeritems-hustlefit li,
+.sociaalmedia-footer li {
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.footeritems-hustlefit li:hover,
+.sociaalmedia-footer img:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.sociaalmedia-footer img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.sociaalmedia-footer img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-hustlefit-homepage {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footeritems-hustlefit ul,
+    .sociaalmedia-footer ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #hustlefitlogo {
+        margin-bottom: 1rem;
+    }
+}
