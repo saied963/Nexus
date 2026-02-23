@@ -85,13 +85,13 @@ Volg onderstaande stappen om het project lokaal te draaien.
 
 1. Open phpMyAdmin via `http://localhost/phpmyadmin`.
 2. Maak een nieuwe database aan met de naam **`nexus`**.
-3. Importeer het bestand `nexus (3).sql` (meegeleverd in het project) in de database `nexus`.
+3. Importeer het bestand `nexus (1).sql` (meegeleverd in het project) in de database `nexus`.
 4. Controleer of de tabellen `categorie`, `product`, `users` en eventueel `klanten` zijn aangemaakt.
 
 **Voorbeeldgegevens**  
 De tabel `product` bevat al enkele producten voor de herencategorie. De tabel `users` bevat een testgebruiker:
-- Email: saied@gmail.com
-- Wachtwoord: (zie hash in SQL, maar waarschijnlijk is het wachtwoord `099999` of iets dergelijks – test door een nieuwe registratie aan te maken).
+- Email: ff@gmail.com
+- Wachtwoord: wachtwoord
 
 ---
 
@@ -99,70 +99,58 @@ De tabel `product` bevat al enkele producten voor de herencategorie. De tabel `u
 
 ```
 hustlefit/
-│
-├── Fotos/                  # Alle afbeeldingen (productfoto's, logo's, banners)
-│
-├── lemonmilk/              # Custom fonts (LEMONMILK)
-│
-├── accessoires.css
-├── accessoires.js
-├── accessoires.php         # Accessoires pagina
-├── authentication.php      # Verwerkt login, registratie, logout
-├── dames.css
-├── dames.html              # Dames pagina (statisch)
-├── dames.js
-├── db_accessoires.php      # Databaseconnectie voor accessoires (niet in gebruik)
-├── db_connection.php       # Hoofd databaseconnectie
-├── kids.html               # Kids pagina (statisch)
-├── login.php               # Inlogformulier
-├── Netux.css               # Hoofd stylesheet (door mij)
-├── Netux.html              # Homepagina (door mij)
-├── Netux.js                # JavaScript voor homepagina (door mij)
-├── Netux_herenpagina.php   # Herenpagina met databasekoppeling (door mij)
-├── nexus (3).sql           # Database export
-├── profile.php             # Gebruikersprofiel
-├── register.php            # Registratieformulier
-├── sales.css
-├── sales.html              # Salespagina (statisch)
-└── sales.js                # (leeg)
+
+Fotos/                  # Alle afbeeldingen (productfoto's, logo's, banners)
+Furkan NEXUS/           # Screenshots en video uitleg van mijn bijdrage aan de project
+lemonmilk/              # Custom fonts (LEMONMILK)
+Week 1 t/m Week 6       # Scrumboards, Sprint Retrospectives, Sprint reviews, standup meetings
+accessoires.css
+accessoires.js
+accessoires.php         # Accessoires pagina
+authentication.php      # Verwerkt login, registratie, logout
+dames.css
+dames.html              # Dames pagina (statisch)
+dames.js
+db_connection.php       # Hoofd databaseconnectie
+kids.html               # Kids pagina (statisch)
+login.php               # Inlogformulier
+Netux.css               # Hoofd stylesheet (door mij)
+Netux.html              # Homepagina (door mij)
+Netux.js                # JavaScript voor homepagina (door mij)
+Netux_herenpagina.php   # Herenpagina met databasekoppeling (door mij)
+nexus (1).sql           # Database export
+profile.php             # Gebruikersprofiel
+register.php            # Registratieformulier
+sales.css
+sales.html              # Salespagina (statisch)
+sales.js                # (leeg)
 ```
 
 ---
 
 ## 👥 Team en bijdragen
 
-Dit project is gemaakt door een team van vijf studenten in leerjaar 1. Hieronder staat wie waaraan heeft gewerkt.
+Dit project is gemaakt door een team van vijf studenten in leerjaar 1. Hieronder staat wie waaraan heeft gewerkt en welke rollen we hebben verdeeld. Omdat we geen versiebeheer hebben gebruikt, is dit een achteraf overzicht van de bijdragen.
 
 | Naam (anoniem) | Bijdrage |
 |----------------|----------|
-| **Ik**         | **Homepagina (`Netux.html`)** met bijbehorende **CSS (`Netux.css`)** en **JavaScript (`Netux.js`)**. Ook de **heren-pagina (`Netux_herenpagina.php`)** met dynamische productweergave uit de database. |
-| Teamgenoot 1   | Accessoirespagina (`accessoires.php`, `accessoires.css`, `accessoires.js`) |
+| **Ik**         | **Homepagina (`Netux.html`)** met bijbehorende **CSS (`Netux.css, netux_herenpagina.css`)** en **JavaScript (`Netux.js`)**. Ook de **heren-pagina (`Netux_herenpagina.php`)** met dynamische productweergave uit de database, wireframes gemaakt, databases voor producten gemaakt en scrumboard volledig gemaakt (scrum master). |
+| Teamgenoot 1   | Accessoirespagina (`accessoires.php`, `accessoires.css`, `accessoires.js`), homepagina aangepast en wireframes gemaakt. |
 | Teamgenoot 2   | Inlog/registratie systeem (`authentication.php`, `login.php`, `register.php`, `profile.php`, `db_connection.php`) |
-| Teamgenoot 3   | Damespagina (`dames.html`, `dames.css`, `dames.js`) en Sales pagina (`sales.html`, `sales.css`) |
-| Teamgenoot 4   | Kindermode pagina (`kids.html`) en databaseontwerp (`nexus.sql`) |
+| Teamgenoot 3   | Damespagina (`dames.html`, `dames.css`, `dames.js`), Sales pagina (`sales.html`, `sales.css`) en CRUD gemaakt van leveranciers |
+| Teamgenoot 4   | Kinder pagina (`kids.html`) en databaseontwerp (`nexus.sql`) |
 
 > **Opmerking:** Omdat we geen versiebeheer zoals Git hebben gebruikt, zijn de bijdragen achteraf geïnventariseerd. Sommige teamleden hebben ook meegeholpen met elkaars code (pair programming).
 
 ---
 
-## 📸 Screenshots
+## Schermopname van de website
 
-*Hier kun je enkele screenshots toevoegen van de belangrijkste pagina's, bijvoorbeeld:*
-- Homepagina
-- Herenpagina met producten uit database
-- Inlog/registratieformulier
-- Responsive weergave op mobiel
-
-*Plaats de afbeeldingen in een map `screenshots` en verwijs ernaar:*
-
-```
-![Homepagina](screenshots/home.png)
-![Herenpagina](screenshots/heren.png)
-```
+De video van de schermopname is te vinden via Github in de map `hustlefit`. Hierin laat ik zien hoe de website werkt, inclusief de homepagina, herenpagina met databaseproducten die ik gemaakt heb, en het inlog/registratiesysteem dat door een teamgenoot is gemaakt.
 
 ---
 
-## 🔮 Toekomstige verbeteringen
+## Toekomstige verbeteringen
 
 Het project is functioneel maar kan op een aantal punten worden verbeterd:
 
@@ -182,4 +170,3 @@ Dit project is gemaakt voor educatieve doeleinden. Je mag het vrij gebruiken, aa
 
 ---
 
-**Veel succes met je sollicitatie!** Mocht je vragen hebben over het project, neem dan gerust contact op.
